@@ -5,6 +5,13 @@ encrypted_storage = []
 manager_password = None  # Variable to store the manager password
 
 
+#For netlify serverless function
+def handler(event, context):
+    return {
+        "statusCode": 200,
+        "body": "Hello, world!"
+    }
+
 # Function to assign the manager password
 def assign_password():
     global manager_password
