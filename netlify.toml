@@ -1,0 +1,8 @@
+[build]
+functions = "netlify/functions"
+publish = "dist" # Optional: Specify if there's a frontend
+
+[[redirects]]
+from = "/*"
+to = "/.netlify/functions/main"
+status = 200
